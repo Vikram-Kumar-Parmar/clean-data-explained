@@ -17,7 +17,8 @@ st.set_page_config(page_title="Clean Data, Explained", page_icon="🧹", layout=
 st.title("🧹 Clean Data, Explained")
 st.caption("Upload a messy CSV. Get a cleaned file and a plain-English report of every issue found.")
 
-client = genai.Client(api_key=st.secrets["Gemini_Key"])
+#client = genai.Client(api_key=st.secrets["Gemini_Key"])
+client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
 MODEL = "gemini-3.6-flash"
 
 SYSTEM_PROMPT = """You are a senior data analyst writing a data quality report for a non-technical business stakeholder.
